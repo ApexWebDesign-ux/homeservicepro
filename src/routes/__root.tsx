@@ -9,6 +9,8 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { Header } from "@/components/site/Header";
+import { Footer } from "@/components/site/Footer";
 
 function NotFoundComponent() {
   return (
@@ -72,14 +74,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Home Service Pro LLC — HVAC, Plumbing & Electrical in Greensboro, NC" },
+      { name: "description", content: "Trusted Greensboro HVAC, plumbing, and electrical contractor. Licensed pros, honest quotes, fast service. Call (336) 281-9855." },
+      { name: "author", content: "Home Service Pro LLC" },
+      { property: "og:title", content: "Home Service Pro LLC — Greensboro HVAC, Plumbing & Electrical" },
+      { property: "og:description", content: "One-stop home service: HVAC, plumbing, and electrical. Licensed, insured, and ready when you need us." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
@@ -113,7 +114,13 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="flex min-h-screen flex-col">
+        <Header />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </QueryClientProvider>
   );
 }
