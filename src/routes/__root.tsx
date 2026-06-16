@@ -77,10 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Home Service Pro LLC — HVAC, Plumbing & Electrical in Greensboro, NC" },
       { name: "description", content: "Trusted Greensboro HVAC, plumbing, and electrical contractor. Licensed pros, honest quotes, fast service. Call (336) 281-9855." },
       { name: "author", content: "Home Service Pro LLC" },
-      { property: "og:title", content: "Home Service Pro LLC — Greensboro HVAC, Plumbing & Electrical" },
-      { property: "og:description", content: "One-stop home service: HVAC, plumbing, and electrical. Licensed, insured, and ready when you need us." },
+      { property: "og:title", content: "Home Service Pro LLC — HVAC, Plumbing & Electrical in Greensboro, NC" },
+      { property: "og:description", content: "Trusted Greensboro HVAC, plumbing, and electrical contractor. Licensed pros, honest quotes, fast service. Call (336) 281-9855." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Home Service Pro LLC — HVAC, Plumbing & Electrical in Greensboro, NC" },
+      { name: "twitter:description", content: "Trusted Greensboro HVAC, plumbing, and electrical contractor. Licensed pros, honest quotes, fast service. Call (336) 281-9855." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9440365e-7b4a-4ae9-8acb-547a44e0a485/id-preview-d956a56c--59c8ded1-eab6-4ee1-89c0-2d9d47e28add.lovable.app-1778293821994.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9440365e-7b4a-4ae9-8acb-547a44e0a485/id-preview-d956a56c--59c8ded1-eab6-4ee1-89c0-2d9d47e28add.lovable.app-1778293821994.png" },
     ],
     links: [
       {
